@@ -1,0 +1,3 @@
+SELECT * FROM ventas v JOIN clients c ON c.clients_id=v.clients_clients_id WHERE clients_id = 2 AND v.data BETWEEN "2022-12-01" AND "2022-12-31";
+SELECT u.marca, e.empleat_id FROM ULLERES U JOIN ventas v ON u.ulleres_id=v.ulleres_ulleres_id JOIN empleat e ON v.empleat_empleat_id=e.empleat_id WHERE e.empleat_id=1 AND v.data BETWEEN "2022-01-01" AND "2022-12-31";
+SELECT DISTINCT p.nom FROM proveidor p JOIN ulleres u ON p.proveidor_id=u.proveidor_proveidor_id JOIN ventas v ON u.ulleres_id=v.ulleres_ulleres_id;
